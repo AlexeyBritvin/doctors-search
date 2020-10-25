@@ -1,0 +1,24 @@
+@import '../../styles/variables.css';
+
+.link {
+  padding: 0;
+  composes: regularText from global;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--accentColor);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dotted var(--accentColor);
+  cursor: pointer;
+}
+
+.primary {
+  padding: 4px 24px;
+  composes: regularText from global;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary);
+  color: var(--reverseTextColor);
+  cursor: pointer;
+}
