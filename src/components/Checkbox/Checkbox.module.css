@@ -1,0 +1,57 @@
+@import '../../styles/variables.css';
+
+.container {
+  display: inline-block;
+  composes: regularText from global;
+}
+
+.input {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  border: 2px solid var(--secondaryTextColor);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.checkbox::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 9px;
+  background: no-repeat center center url('../../icons/checked.svg');
+  opacity: 0;
+  transition: opacity 50ms ease;
+  transform: translate(-50%, -50%);
+}
+
+.input:checked + .checkbox::before {
+  opacity: 1;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkboxText {
+  padding: 0 4px;
+}
