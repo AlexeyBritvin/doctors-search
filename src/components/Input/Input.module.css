@@ -1,0 +1,29 @@
+@import '../../styles/variables.css';
+
+.inputBox {
+  position: relative;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 10px 8px;
+  border: 1px solid var(--borderColor);
+  border-radius: 4px;
+  box-sizing: border-box;
+  composes: regularText from global;
+}
+
+.input:focus {
+  border-color: var(--primary);
+}
+
+.input::placeholder {
+  color: var(--secondaryTextColor);
+}
+
+.icon {
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+}
