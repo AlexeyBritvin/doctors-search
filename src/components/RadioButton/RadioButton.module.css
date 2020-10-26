@@ -9,18 +9,16 @@
   composes: hidden from '../../styles/hidden.module.css';
 }
 
-.checkbox {
+.radio {
   position: relative;
   display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-right: 4px;
-  border: 2px solid var(--secondaryTextColor);
-  border-radius: 2px;
+  width: 12px;
+  height: 9px;
+  margin-right: 8px;
   box-sizing: border-box;
 }
 
-.checkbox::before {
+.radio::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -33,16 +31,16 @@
   transform: translate(-50%, -50%);
 }
 
-.input:checked + .checkbox::before {
+.input:checked + .radio::before {
   opacity: 1;
 }
 
-.checkboxLabel {
+.radioLabel {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.checkboxText {
+.radioText {
   padding: 0 4px;
 }
