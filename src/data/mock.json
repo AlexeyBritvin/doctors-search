@@ -14,7 +14,8 @@
         "insurances": "Hartford",
         "telehealth": true,
         "telehealth_available": "5/24/2021",
-        "offline_available": "7/9/2021"
+        "offline_available": "7/9/2021",
+        "price": 3600
       },
       {
         "id": 2,
@@ -28,7 +29,8 @@
         "insurances": "Ironshore",
         "telehealth": true,
         "telehealth_available": "8/24/2021",
-        "offline_available": "5/1/2021"
+        "offline_available": "5/1/2021",
+        "price": 500
       },
       {
         "id": 3,
@@ -42,7 +44,8 @@
         "insurances": "Great American Insurance Group",
         "telehealth": true,
         "telehealth_available": "6/1/2021",
-        "offline_available": "9/19/2021"
+        "offline_available": "9/19/2021",
+        "price": 3000
       },
       {
         "id": 4,
@@ -56,7 +59,8 @@
         "insurances": "ANE",
         "telehealth": false,
         "telehealth_available": "8/28/2021",
-        "offline_available": "2/2/2021"
+        "offline_available": "2/2/2021",
+        "price": 8300
       },
       {
         "id": 5,
@@ -70,7 +74,8 @@
         "insurances": "",
         "telehealth": true,
         "telehealth_available": "4/7/2021",
-        "offline_available": "2/22/2021"
+        "offline_available": "2/22/2021",
+        "price": 7900
       },
       {
         "id": 6,
@@ -84,7 +89,8 @@
         "insurances": "Golden Rule Insurance Company",
         "telehealth": false,
         "telehealth_available": "7/14/2021",
-        "offline_available": "3/11/2021"
+        "offline_available": "3/11/2021",
+        "price": 2200
       },
       {
         "id": 7,
@@ -98,7 +104,8 @@
         "insurances": "American Family Insurance",
         "telehealth": true,
         "telehealth_available": "10/4/2021",
-        "offline_available": "7/26/2021"
+        "offline_available": "7/26/2021",
+        "price": 6500
       },
       {
         "id": 8,
@@ -112,7 +119,8 @@
         "insurances": "ACORD",
         "telehealth": false,
         "telehealth_available": "3/12/2021",
-        "offline_available": "4/14/2021"
+        "offline_available": "4/14/2021",
+        "price": 800
       },
       {
         "id": 9,
@@ -126,7 +134,8 @@
         "insurances": "Asuris Northwest Health",
         "telehealth": true,
         "telehealth_available": "7/20/2021",
-        "offline_available": "10/8/2021"
+        "offline_available": "10/8/2021",
+        "price": 6900
       },
       {
         "id": 10,
@@ -140,7 +149,8 @@
         "insurances": "Intact",
         "telehealth": false,
         "telehealth_available": "6/16/2021",
-        "offline_available": "5/12/2021"
+        "offline_available": "5/12/2021",
+        "price": 2700
       },
       {
         "id": 11,
@@ -154,7 +164,8 @@
         "insurances": "ACORD",
         "telehealth": false,
         "telehealth_available": "7/17/2021",
-        "offline_available": "6/9/2021"
+        "offline_available": "6/9/2021",
+        "price": 8500
       },
       {
         "id": 12,
@@ -168,7 +179,8 @@
         "insurances": "Hanover Insurance Group",
         "telehealth": true,
         "telehealth_available": "4/30/2021",
-        "offline_available": "6/24/2021"
+        "offline_available": "6/24/2021",
+        "price": 6900
       },
       {
         "id": 13,
@@ -182,7 +194,8 @@
         "insurances": "Generali",
         "telehealth": false,
         "telehealth_available": "8/12/2021",
-        "offline_available": "9/1/2021"
+        "offline_available": "9/1/2021",
+        "price": 7300
       },
       {
         "id": 14,
@@ -196,7 +209,8 @@
         "insurances": "HUMANA",
         "telehealth": true,
         "telehealth_available": "3/24/2021",
-        "offline_available": "9/12/2021"
+        "offline_available": "9/12/2021",
+        "price": 9900
       },
       {
         "id": 15,
@@ -210,7 +224,8 @@
         "insurances": "Group Health Cooperative",
         "telehealth": true,
         "telehealth_available": "9/20/2021",
-        "offline_available": "5/17/2021"
+        "offline_available": "5/17/2021",
+        "price": 3600
       },
       {
         "id": 16,
@@ -224,7 +239,8 @@
         "insurances": "Arthur J. Gallagher",
         "telehealth": false,
         "telehealth_available": "7/1/2021",
-        "offline_available": "1/4/2021"
+        "offline_available": "1/4/2021",
+        "price": 7900
       },
       {
         "id": 17,
@@ -238,7 +254,8 @@
         "insurances": "AmWins",
         "telehealth": true,
         "telehealth_available": "6/21/2021",
-        "offline_available": "2/5/2021"
+        "offline_available": "2/5/2021",
+        "price": 7500
       },
       {
         "id": 18,
@@ -252,7 +269,8 @@
         "insurances": "Harvard Pilgrim Health Care",
         "telehealth": false,
         "telehealth_available": "4/26/2021",
-        "offline_available": "4/10/2021"
+        "offline_available": "4/10/2021",
+        "price": 600
       },
       {
         "id": 19,
@@ -266,7 +284,8 @@
         "insurances": "LifeWise Health Plan of Washington",
         "telehealth": false,
         "telehealth_available": "9/21/2021",
-        "offline_available": "9/28/2021"
+        "offline_available": "9/28/2021",
+        "price": 9100
       },
       {
         "id": 20,
@@ -280,7 +299,8 @@
         "insurances": "Insurance Services of America",
         "telehealth": false,
         "telehealth_available": "7/8/2021",
-        "offline_available": "3/22/2021"
+        "offline_available": "3/22/2021",
+        "price": 6200
       },
       {
         "id": 21,
@@ -294,7 +314,8 @@
         "insurances": "ACORD",
         "telehealth": false,
         "telehealth_available": "4/16/2021",
-        "offline_available": "4/14/2021"
+        "offline_available": "4/14/2021",
+        "price": 1900
       },
       {
         "id": 22,
@@ -308,7 +329,8 @@
         "insurances": "Group Health Cooperative",
         "telehealth": true,
         "telehealth_available": "9/2/2021",
-        "offline_available": "5/13/2021"
+        "offline_available": "5/13/2021",
+        "price": 5000
       },
       {
         "id": 23,
@@ -322,7 +344,8 @@
         "insurances": "Canopius",
         "telehealth": false,
         "telehealth_available": "5/22/2021",
-        "offline_available": "6/6/2021"
+        "offline_available": "6/6/2021",
+        "price": 5800
       },
       {
         "id": 24,
@@ -336,7 +359,8 @@
         "insurances": "Continental General Insurance Company",
         "telehealth": true,
         "telehealth_available": "2/19/2021",
-        "offline_available": "7/14/2021"
+        "offline_available": "7/14/2021",
+        "price": 400
       },
       {
         "id": 25,
@@ -350,7 +374,8 @@
         "insurances": "Intact",
         "telehealth": false,
         "telehealth_available": "9/24/2021",
-        "offline_available": "8/13/2021"
+        "offline_available": "8/13/2021",
+        "price": 5000
       },
       {
         "id": 26,
@@ -364,7 +389,8 @@
         "insurances": "Geisinger",
         "telehealth": false,
         "telehealth_available": "7/1/2021",
-        "offline_available": "7/29/2021"
+        "offline_available": "7/29/2021",
+        "price": 6300
       },
       {
         "id": 27,
@@ -378,7 +404,8 @@
         "insurances": "AFLAC",
         "telehealth": false,
         "telehealth_available": "3/26/2021",
-        "offline_available": "2/2/2021"
+        "offline_available": "2/2/2021",
+        "price": 6600
       },
       {
         "id": 28,
@@ -392,7 +419,8 @@
         "insurances": "Cambia Health Solutions",
         "telehealth": true,
         "telehealth_available": "9/1/2021",
-        "offline_available": "8/27/2021"
+        "offline_available": "8/27/2021",
+        "price": 5500
       },
       {
         "id": 29,
@@ -406,7 +434,8 @@
         "insurances": "Hiscox",
         "telehealth": false,
         "telehealth_available": "2/18/2021",
-        "offline_available": "1/30/2021"
+        "offline_available": "1/30/2021",
+        "price": 7600
       },
       {
         "id": 30,
@@ -420,7 +449,8 @@
         "insurances": "Liberty Medical",
         "telehealth": true,
         "telehealth_available": "10/2/2021",
-        "offline_available": "4/23/2021"
+        "offline_available": "4/23/2021",
+        "price": 8100
       },
       {
         "id": 31,
@@ -434,7 +464,8 @@
         "insurances": "Humana",
         "telehealth": true,
         "telehealth_available": "6/8/2021",
-        "offline_available": "8/2/2021"
+        "offline_available": "8/2/2021",
+        "price": 2200
       },
       {
         "id": 32,
@@ -448,7 +479,8 @@
         "insurances": "CNA",
         "telehealth": false,
         "telehealth_available": "9/15/2021",
-        "offline_available": "3/22/2021"
+        "offline_available": "3/22/2021",
+        "price": 6600
       },
       {
         "id": 33,
@@ -462,7 +494,8 @@
         "insurances": "CFC Underwriting",
         "telehealth": true,
         "telehealth_available": "6/2/2021",
-        "offline_available": "1/3/2021"
+        "offline_available": "1/3/2021",
+        "price": 2900
       },
       {
         "id": 34,
@@ -476,7 +509,8 @@
         "insurances": "Health Net",
         "telehealth": true,
         "telehealth_available": "8/25/2021",
-        "offline_available": "7/21/2021"
+        "offline_available": "7/21/2021",
+        "price": 400
       },
       {
         "id": 35,
@@ -490,7 +524,8 @@
         "insurances": "CNA",
         "telehealth": true,
         "telehealth_available": "4/4/2021",
-        "offline_available": "9/28/2021"
+        "offline_available": "9/28/2021",
+        "price": 7700
       },
       {
         "id": 36,
@@ -504,7 +539,8 @@
         "insurances": "American National Insurance Company",
         "telehealth": false,
         "telehealth_available": "3/8/2021",
-        "offline_available": "5/1/2021"
+        "offline_available": "5/1/2021",
+        "price": 6700
       },
       {
         "id": 37,
@@ -518,7 +554,8 @@
         "insurances": "Anthem",
         "telehealth": false,
         "telehealth_available": "7/23/2021",
-        "offline_available": "3/23/2021"
+        "offline_available": "3/23/2021",
+        "price": 8400
       },
       {
         "id": 38,
@@ -532,7 +569,8 @@
         "insurances": "Humana",
         "telehealth": false,
         "telehealth_available": "7/22/2021",
-        "offline_available": "5/28/2021"
+        "offline_available": "5/28/2021",
+        "price": 6700
       },
       {
         "id": 39,
@@ -546,7 +584,8 @@
         "insurances": "Great American Insurance Group",
         "telehealth": false,
         "telehealth_available": "3/13/2021",
-        "offline_available": "3/17/2021"
+        "offline_available": "3/17/2021",
+        "price": 6500
       },
       {
         "id": 40,
@@ -560,7 +599,8 @@
         "insurances": "InsurBanc",
         "telehealth": false,
         "telehealth_available": "2/21/2021",
-        "offline_available": "4/30/2021"
+        "offline_available": "4/30/2021",
+        "price": 1200
       },
       {
         "id": 41,
@@ -574,7 +614,8 @@
         "insurances": "LifeWise Health Plan of Washington",
         "telehealth": false,
         "telehealth_available": "2/18/2021",
-        "offline_available": "8/14/2021"
+        "offline_available": "8/14/2021",
+        "price": 2300
       },
       {
         "id": 42,
@@ -588,7 +629,8 @@
         "insurances": "Insurance Services of America",
         "telehealth": false,
         "telehealth_available": "6/22/2021",
-        "offline_available": "3/15/2021"
+        "offline_available": "3/15/2021",
+        "price": 8800
       },
       {
         "id": 43,
@@ -602,7 +644,8 @@
         "insurances": "Aetna",
         "telehealth": true,
         "telehealth_available": "9/8/2021",
-        "offline_available": "7/14/2021"
+        "offline_available": "7/14/2021",
+        "price": 3800
       },
       {
         "id": 44,
@@ -616,7 +659,8 @@
         "insurances": "Fortis",
         "telehealth": true,
         "telehealth_available": "8/20/2021",
-        "offline_available": "4/29/2021"
+        "offline_available": "4/29/2021",
+        "price": 9900
       },
       {
         "id": 45,
@@ -630,7 +674,8 @@
         "insurances": "Group Health Cooperative",
         "telehealth": true,
         "telehealth_available": "4/12/2021",
-        "offline_available": "3/12/2021"
+        "offline_available": "3/12/2021",
+        "price": 3900
       },
       {
         "id": 46,
@@ -644,7 +689,8 @@
         "insurances": "Brown & Riding",
         "telehealth": true,
         "telehealth_available": "5/7/2021",
-        "offline_available": "9/29/2021"
+        "offline_available": "9/29/2021",
+        "price": 9200
       },
       {
         "id": 47,
@@ -658,7 +704,8 @@
         "insurances": "AXA XL",
         "telehealth": false,
         "telehealth_available": "2/25/2021",
-        "offline_available": "3/31/2021"
+        "offline_available": "3/31/2021",
+        "price": 7300
       },
       {
         "id": 48,
@@ -672,7 +719,8 @@
         "insurances": "HealthSpring",
         "telehealth": true,
         "telehealth_available": "5/4/2021",
-        "offline_available": "5/11/2021"
+        "offline_available": "5/11/2021",
+        "price": 6100
       },
       {
         "id": 49,
@@ -686,7 +734,8 @@
         "insurances": "Hyperion Insurance Group",
         "telehealth": false,
         "telehealth_available": "6/10/2021",
-        "offline_available": "7/28/2021"
+        "offline_available": "7/28/2021",
+        "price": 900
       },
       {
         "id": 50,
@@ -700,7 +749,8 @@
         "insurances": "LifeWise Health Plan of Washington",
         "telehealth": true,
         "telehealth_available": "2/3/2021",
-        "offline_available": "6/3/2021"
+        "offline_available": "6/3/2021",
+        "price": 7200
       },
       {
         "id": 51,
@@ -714,7 +764,8 @@
         "insurances": "CTC Transportation",
         "telehealth": false,
         "telehealth_available": "5/8/2021",
-        "offline_available": "6/22/2021"
+        "offline_available": "6/22/2021",
+        "price": 5600
       },
       {
         "id": 52,
@@ -728,7 +779,8 @@
         "insurances": "Cambia Health Solutions",
         "telehealth": false,
         "telehealth_available": "8/24/2021",
-        "offline_available": "8/9/2021"
+        "offline_available": "8/9/2021",
+        "price": 6700
       },
       {
         "id": 53,
@@ -742,7 +794,8 @@
         "insurances": "Health Markets",
         "telehealth": false,
         "telehealth_available": "5/18/2021",
-        "offline_available": "9/30/2021"
+        "offline_available": "9/30/2021",
+        "price": 7400
       },
       {
         "id": 54,
@@ -756,7 +809,8 @@
         "insurances": "Connecticare Inc.",
         "telehealth": false,
         "telehealth_available": "1/25/2021",
-        "offline_available": "9/18/2021"
+        "offline_available": "9/18/2021",
+        "price": 5800
       },
       {
         "id": 55,
@@ -770,7 +824,8 @@
         "insurances": "InsurBanc",
         "telehealth": true,
         "telehealth_available": "5/9/2021",
-        "offline_available": "2/13/2021"
+        "offline_available": "2/13/2021",
+        "price": 6500
       },
       {
         "id": 56,
@@ -784,7 +839,8 @@
         "insurances": "ITC",
         "telehealth": true,
         "telehealth_available": "3/19/2021",
-        "offline_available": "6/4/2021"
+        "offline_available": "6/4/2021",
+        "price": 100
       },
       {
         "id": 57,
@@ -798,7 +854,8 @@
         "insurances": "Arch Insurance",
         "telehealth": false,
         "telehealth_available": "7/18/2021",
-        "offline_available": "6/18/2021"
+        "offline_available": "6/18/2021",
+        "price": 100
       },
       {
         "id": 58,
@@ -812,7 +869,8 @@
         "insurances": "AmTrust",
         "telehealth": false,
         "telehealth_available": "9/5/2021",
-        "offline_available": "2/8/2021"
+        "offline_available": "2/8/2021",
+        "price": 3900
       },
       {
         "id": 59,
@@ -826,7 +884,8 @@
         "insurances": "Insurance Services of America",
         "telehealth": false,
         "telehealth_available": "8/17/2021",
-        "offline_available": "9/13/2021"
+        "offline_available": "9/13/2021",
+        "price": 9100
       },
       {
         "id": 60,
@@ -840,7 +899,8 @@
         "insurances": "Berkshire Hathaway",
         "telehealth": false,
         "telehealth_available": "6/3/2021",
-        "offline_available": "9/8/2021"
+        "offline_available": "9/8/2021",
+        "price": 100
       },
       {
         "id": 61,
@@ -854,7 +914,8 @@
         "insurances": "Liberty International Underwriter",
         "telehealth": true,
         "telehealth_available": "1/26/2021",
-        "offline_available": "1/19/2021"
+        "offline_available": "1/19/2021",
+        "price": 4500
       },
       {
         "id": 62,
@@ -868,7 +929,8 @@
         "insurances": "Arch Insurance",
         "telehealth": true,
         "telehealth_available": "7/4/2021",
-        "offline_available": "1/15/2021"
+        "offline_available": "1/15/2021",
+        "price": 7900
       },
       {
         "id": 63,
@@ -882,7 +944,8 @@
         "insurances": "FM Global",
         "telehealth": true,
         "telehealth_available": "7/19/2021",
-        "offline_available": "9/27/2021"
+        "offline_available": "9/27/2021",
+        "price": 7700
       },
       {
         "id": 64,
@@ -896,7 +959,8 @@
         "insurances": "InsurBanc",
         "telehealth": false,
         "telehealth_available": "2/6/2021",
-        "offline_available": "8/30/2021"
+        "offline_available": "8/30/2021",
+        "price": 500
       },
       {
         "id": 65,
@@ -910,7 +974,8 @@
         "insurances": "DUAL",
         "telehealth": false,
         "telehealth_available": "5/21/2021",
-        "offline_available": "9/2/2021"
+        "offline_available": "9/2/2021",
+        "price": 3800
       },
       {
         "id": 66,
@@ -924,7 +989,8 @@
         "insurances": "Liberty International Underwriter",
         "telehealth": true,
         "telehealth_available": "6/19/2021",
-        "offline_available": "9/21/2021"
+        "offline_available": "9/21/2021",
+        "price": 2400
       },
       {
         "id": 67,
@@ -938,7 +1004,8 @@
         "insurances": "Century Insurance",
         "telehealth": false,
         "telehealth_available": "5/26/2021",
-        "offline_available": "5/1/2021"
+        "offline_available": "5/1/2021",
+        "price": 6200
       },
       {
         "id": 68,
@@ -952,7 +1019,8 @@
         "insurances": "Farmers",
         "telehealth": false,
         "telehealth_available": "7/10/2021",
-        "offline_available": "3/3/2021"
+        "offline_available": "3/3/2021",
+        "price": 3700
       },
       {
         "id": 69,
@@ -966,7 +1034,8 @@
         "insurances": "Aon",
         "telehealth": true,
         "telehealth_available": "4/23/2021",
-        "offline_available": "6/19/2021"
+        "offline_available": "6/19/2021",
+        "price": 9200
       },
       {
         "id": 70,
@@ -980,7 +1049,8 @@
         "insurances": "Liberty International Underwriter",
         "telehealth": true,
         "telehealth_available": "3/11/2021",
-        "offline_available": "5/2/2021"
+        "offline_available": "5/2/2021",
+        "price": 3300
       },
       {
         "id": 71,
@@ -994,7 +1064,8 @@
         "insurances": "Health Markets",
         "telehealth": false,
         "telehealth_available": "6/16/2021",
-        "offline_available": "3/9/2021"
+        "offline_available": "3/9/2021",
+        "price": 8500
       },
       {
         "id": 72,
@@ -1008,7 +1079,8 @@
         "insurances": "Applied Systems",
         "telehealth": true,
         "telehealth_available": "1/21/2021",
-        "offline_available": "9/24/2021"
+        "offline_available": "9/24/2021",
+        "price": 8400
       },
       {
         "id": 73,
@@ -1022,7 +1094,8 @@
         "insurances": "Liberty Medical",
         "telehealth": true,
         "telehealth_available": "6/20/2021",
-        "offline_available": "2/7/2021"
+        "offline_available": "2/7/2021",
+        "price": 3800
       },
       {
         "id": 74,
@@ -1036,7 +1109,8 @@
         "insurances": "AXIS Capital",
         "telehealth": true,
         "telehealth_available": "5/13/2021",
-        "offline_available": "2/14/2021"
+        "offline_available": "2/14/2021",
+        "price": 6600
       },
       {
         "id": 75,
@@ -1050,7 +1124,8 @@
         "insurances": "Intermountain Healthcare",
         "telehealth": false,
         "telehealth_available": "5/8/2021",
-        "offline_available": "9/6/2021"
+        "offline_available": "9/6/2021",
+        "price": 4900
       },
       {
         "id": 76,
@@ -1064,7 +1139,8 @@
         "insurances": "Farmers",
         "telehealth": true,
         "telehealth_available": "1/28/2021",
-        "offline_available": "4/5/2021"
+        "offline_available": "4/5/2021",
+        "price": 3500
       },
       {
         "id": 77,
@@ -1078,7 +1154,8 @@
         "insurances": "CFC Underwriting",
         "telehealth": true,
         "telehealth_available": "3/2/2021",
-        "offline_available": "5/28/2021"
+        "offline_available": "5/28/2021",
+        "price": 100
       },
       {
         "id": 78,
@@ -1092,7 +1169,8 @@
         "insurances": "Crawford & Company",
         "telehealth": false,
         "telehealth_available": "5/17/2021",
-        "offline_available": "2/5/2021"
+        "offline_available": "2/5/2021",
+        "price": 7900
       },
       {
         "id": 79,
@@ -1106,7 +1184,8 @@
         "insurances": "Hiscox",
         "telehealth": true,
         "telehealth_available": "7/11/2021",
-        "offline_available": "6/21/2021"
+        "offline_available": "6/21/2021",
+        "price": 9000
       },
       {
         "id": 80,
@@ -1120,7 +1199,8 @@
         "insurances": "Arch Insurance",
         "telehealth": false,
         "telehealth_available": "9/2/2021",
-        "offline_available": "7/15/2021"
+        "offline_available": "7/15/2021",
+        "price": 7700
       },
       {
         "id": 81,
@@ -1134,7 +1214,8 @@
         "insurances": "Brown & Riding",
         "telehealth": true,
         "telehealth_available": "8/6/2021",
-        "offline_available": "4/6/2021"
+        "offline_available": "4/6/2021",
+        "price": 6000
       },
       {
         "id": 82,
@@ -1148,7 +1229,8 @@
         "insurances": "AFLAC",
         "telehealth": false,
         "telehealth_available": "2/26/2021",
-        "offline_available": "6/28/2021"
+        "offline_available": "6/28/2021",
+        "price": 5100
       },
       {
         "id": 83,
@@ -1162,7 +1244,8 @@
         "insurances": "Argo Group",
         "telehealth": true,
         "telehealth_available": "9/13/2021",
-        "offline_available": "5/5/2021"
+        "offline_available": "5/5/2021",
+        "price": 8500
       },
       {
         "id": 84,
@@ -1176,7 +1259,8 @@
         "insurances": "HUMANA",
         "telehealth": false,
         "telehealth_available": "1/15/2021",
-        "offline_available": "2/26/2021"
+        "offline_available": "2/26/2021",
+        "price": 1800
       },
       {
         "id": 85,
@@ -1190,7 +1274,8 @@
         "insurances": "Geisinger",
         "telehealth": false,
         "telehealth_available": "2/22/2021",
-        "offline_available": "9/2/2021"
+        "offline_available": "9/2/2021",
+        "price": 8800
       },
       {
         "id": 86,
@@ -1204,7 +1289,8 @@
         "insurances": "Kaiser Permanente",
         "telehealth": false,
         "telehealth_available": "4/27/2021",
-        "offline_available": "8/7/2021"
+        "offline_available": "8/7/2021",
+        "price": 1900
       },
       {
         "id": 87,
@@ -1218,7 +1304,8 @@
         "insurances": "Fortis",
         "telehealth": true,
         "telehealth_available": "1/27/2021",
-        "offline_available": "5/16/2021"
+        "offline_available": "5/16/2021",
+        "price": 4200
       },
       {
         "id": 88,
@@ -1232,7 +1319,8 @@
         "insurances": "Genworth",
         "telehealth": false,
         "telehealth_available": "8/15/2021",
-        "offline_available": "1/27/2021"
+        "offline_available": "1/27/2021",
+        "price": 4100
       },
       {
         "id": 89,
@@ -1246,7 +1334,8 @@
         "insurances": "Brown & Riding",
         "telehealth": true,
         "telehealth_available": "6/23/2021",
-        "offline_available": "5/26/2021"
+        "offline_available": "5/26/2021",
+        "price": 1400
       },
       {
         "id": 90,
@@ -1260,7 +1349,8 @@
         "insurances": "ITC",
         "telehealth": false,
         "telehealth_available": "1/11/2021",
-        "offline_available": "9/12/2021"
+        "offline_available": "9/12/2021",
+        "price": 9100
       },
       {
         "id": 91,
@@ -1274,7 +1364,8 @@
         "insurances": "EmblemHealth",
         "telehealth": true,
         "telehealth_available": "7/28/2021",
-        "offline_available": "9/23/2021"
+        "offline_available": "9/23/2021",
+        "price": 7400
       },
       {
         "id": 92,
@@ -1288,7 +1379,8 @@
         "insurances": "Asuris Northwest Health",
         "telehealth": true,
         "telehealth_available": "2/20/2021",
-        "offline_available": "8/12/2021"
+        "offline_available": "8/12/2021",
+        "price": 6500
       },
       {
         "id": 93,
@@ -1302,7 +1394,8 @@
         "insurances": "Intact",
         "telehealth": false,
         "telehealth_available": "3/22/2021",
-        "offline_available": "2/26/2021"
+        "offline_available": "2/26/2021",
+        "price": 9700
       },
       {
         "id": 94,
@@ -1316,7 +1409,8 @@
         "insurances": "Hanover Insurance Group",
         "telehealth": true,
         "telehealth_available": "2/18/2021",
-        "offline_available": "4/8/2021"
+        "offline_available": "4/8/2021",
+        "price": 1400
       },
       {
         "id": 95,
@@ -1330,7 +1424,8 @@
         "insurances": "Liberty Mutual",
         "telehealth": true,
         "telehealth_available": "3/26/2021",
-        "offline_available": "6/24/2021"
+        "offline_available": "6/24/2021",
+        "price": 1400
       },
       {
         "id": 96,
@@ -1344,7 +1439,8 @@
         "insurances": "Farmers",
         "telehealth": false,
         "telehealth_available": "8/3/2021",
-        "offline_available": "4/9/2021"
+        "offline_available": "4/9/2021",
+        "price": 6500
       },
       {
         "id": 97,
@@ -1358,7 +1454,8 @@
         "insurances": "Blue Cross and Blue Shield Association",
         "telehealth": false,
         "telehealth_available": "2/14/2021",
-        "offline_available": "8/11/2021"
+        "offline_available": "8/11/2021",
+        "price": 8000
       },
       {
         "id": 98,
@@ -1372,7 +1469,8 @@
         "insurances": "CareSource",
         "telehealth": true,
         "telehealth_available": "2/23/2021",
-        "offline_available": "7/25/2021"
+        "offline_available": "7/25/2021",
+        "price": 1800
       },
       {
         "id": 99,
@@ -1386,7 +1484,8 @@
         "insurances": "Beazley",
         "telehealth": true,
         "telehealth_available": "3/12/2021",
-        "offline_available": "5/26/2021"
+        "offline_available": "5/26/2021",
+        "price": 4800
       },
       {
         "id": 100,
@@ -1400,7 +1499,8 @@
         "insurances": "Insurance Services of America",
         "telehealth": true,
         "telehealth_available": "9/17/2021",
-        "offline_available": "2/4/2021"
+        "offline_available": "2/4/2021",
+        "price": 8500
       }
     ]
   }
