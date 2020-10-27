@@ -1,0 +1,82 @@
+@import '../../styles/variables.css';
+
+.card p {
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  padding: 24px 32px 32px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--dividerColor);
+}
+
+.cardTextInfo {
+  flex-grow: 1;
+  padding: 0 16px;
+}
+
+.cardTitle {
+  margin-bottom: 8px;
+}
+
+.cardTitle p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.cardTextItem {
+  display: inline-block;
+}
+
+.cardTextItem::after {
+  content: '•';
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.cardTextItem:last-child::after {
+  display: none;
+}
+
+.cardTextRow {
+  margin-bottom: 8px;
+}
+
+.cardAdditionalText .cardTextItem {
+  color: var(--additionalTextColor);
+}
+
+.highlighed {
+  color: #D97767;
+}
+
+.cardActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cardPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cardPriceTitle {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 6px;
+  border-bottom: 1px dotted var(--textColor);
+}
+
+.cardPriceValue {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.icon {
+  margin-top: auto;
+}
