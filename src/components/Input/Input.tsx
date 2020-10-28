@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 import Icon from '../Icon/Icon';
 import { IconTypes } from '../Icon/icon-path';
 import styles from './Input.module.css';
@@ -6,7 +6,7 @@ import styles from './Input.module.css';
 export interface InputProps {
   placeholder?: string;
   value: string;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
   icon?: IconTypes;
   iconSize?: string;
   iconViewbox?: string;
