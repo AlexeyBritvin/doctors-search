@@ -1,4 +1,5 @@
 @import-normalize;
+@import './styles/variables.css';
 
 .regularText {
   font-family: 'Inter', 'Roboto', 'Fira Sans',
@@ -6,12 +7,22 @@
     sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #244D51;
+  color: var(--textColor);
+}
+
+.header {
+  margin: 24px 0 16px;
+  font-family: 'Montserrat', 'Roboto', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  color: var(--textColor);
 }
 
 body {
   margin: 0;
-  padding: 20px;
   composes: regularText;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

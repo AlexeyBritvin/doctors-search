@@ -1,0 +1,31 @@
+.app {
+  composes: regularText from global;
+}
+
+.header {
+  composes: header from global;
+}
+
+.container {
+  width: 100%;
+  max-width: 908px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  box-sizing: border-box;
+}
+
+.info {
+  display: flex;
+}
+
+.infoIcon {
+  padding: 2px 0;
+}
+
+.infoText {
+  padding-left: 6px;
+}
+
+.infoText p {
+  margin: 0;
+}
