@@ -1,13 +1,14 @@
-import React from 'react';
-import Icon from '../Icon/Icon';
+import React, { ChangeEvent, FunctionComponent } from 'react';
+import { ReactComponent as CrossIcon } from '../../icons/cross.svg';
+
 import styles from './Switcher.module.css';
 
 export interface SwitcherProps {
   value: boolean;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Switcher: React.FunctionComponent<SwitcherProps> = ({value, onChange}) => {
+const Switcher: FunctionComponent<SwitcherProps> = ({value, onChange}) => {
   return (
     <div className={styles.switcherBox}>
       <input
@@ -21,13 +22,7 @@ const Switcher: React.FunctionComponent<SwitcherProps> = ({value, onChange}) => 
         className={styles.label}
         htmlFor="switcher"
       >
-        <Icon
-          icon="cross"
-          className={styles.icon}
-          viewBox="0 0 10 10"
-          size="10"
-          color="#91A5A7"
-        ></Icon>
+        <CrossIcon className={styles.icon}></CrossIcon>
         <span className={styles.switcherButton} />
       </label>
     </div>

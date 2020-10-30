@@ -22,8 +22,10 @@
   color: var(--secondaryTextColor);
 }
 
-.icon {
+.iconBox {
   position: absolute;
   right: 16px;
   bottom: 14px;
+  display: flex;
+  align-items: center;
 }

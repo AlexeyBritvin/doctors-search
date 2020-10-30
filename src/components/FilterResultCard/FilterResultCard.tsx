@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import Avatar from '../Avatar/Avatar';
-import Icon from '../Icon/Icon';
+import { ReactComponent as HeartIcon } from '../../icons/heart.svg';
+
 import styles from './FilterResultCard.module.css';
 
 export interface FilterResultCardProps {
@@ -50,7 +51,7 @@ const FilterResultCard: FunctionComponent<FilterResultCardProps> = ({
           <span className={styles.cardPriceValue}>${price}</span>
         </div>
 
-        <Icon className={styles.icon} icon="heart" viewBox="0 0 22 17" size="22"></Icon>
+        <HeartIcon className={styles.icon}></HeartIcon>
       </div>
     </div>
   );

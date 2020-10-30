@@ -1,5 +1,6 @@
 import React, { ChangeEvent, FunctionComponent } from 'react';
 import Input from '../Input/Input';
+import { ReactComponent as SearchIcon } from '../../icons/search.svg';
 
 export interface SearchInputProps {
   placeholder?: string;
@@ -11,9 +12,7 @@ const SearchInput: FunctionComponent<SearchInputProps> = (props) => {
   return (
     <Input
       {...props}
-      icon="search"
-      iconViewbox="0 0 16 16"
-      iconSize="16"
+      icon={<SearchIcon></SearchIcon>}
     ></Input>
   );
 }
