@@ -1,0 +1,58 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.button {
+  composes: regularText from global;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  color: #1C383A;
+  background-color: var(--reverseTextColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  border-color: var(--primary);
+}
+
+.active {
+  background-color: var(--primary);
+}
+
+.active .buttonText {
+  color: var(--reverseTextColor);
+}
+
+.buttonText {
+  display: inline-block;
+  padding-right: 8px;
+}
+
+.arrow {
+  display: inline-block;
+  padding: 0 6px;
+  transition: transform 0.2s ease-in;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 0;
+  z-index: 10;
+  display: block;
+  width: 320px;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: var(--reverseTextColor);
+  border-radius: 8px;
+  box-shadow: -3px 3px 8px -3px #706E6C;
+}
