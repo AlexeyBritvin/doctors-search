@@ -1,20 +1,26 @@
-import React, { ChangeEvent, useState } from 'react';
-import { ReactComponent as InfoIcon } from '../../icons/info.svg';
+import React, { ChangeEvent, SyntheticEvent, useEffect, useState } from 'react';
+import Button from '../Button/Button';
 import Checkbox from '../Checkbox/Checkbox';
 import CheckboxWithCount from '../CheckboxWithCount/CheckboxWithCount';
 import Dropdown from '../Dropdown/Dropdown';
 import FilterResultCard from '../FilterResultCard/FilterResultCard';
 import SearchInput from '../SearchInput/SearchInput';
 import Switcher from '../Switcher/Switcher';
+import { ReactComponent as InfoIcon } from '../../icons/info.svg';
+
+import { Doctor } from '../../models/doctor.model';
+
+import response  from '../../data/mock.json';
 import styles from './App.module.css';
 
 function App() {
-
   const [inputValue, setInputValue] = useState('')
 
   const [checked, setChecked] = useState(false)
 
   const [value, onSwitcherChange] = useState(false)
+
+  const [data, setData] = useState<Doctor[]>([])
 
   const handleChange = ({target}: ChangeEvent<HTMLInputElement>) => {
     setInputValue(target.value)
@@ -25,6 +31,13 @@ function App() {
   }
 
   const onCheckedChange = ({target}: ChangeEvent<HTMLInputElement>) => setChecked(target.checked)
+
+
+  useEffect(() => {
+    if (response.success) {
+      setData(response.data.items)
+    }
+  }, [])
 
   return (
     <div className={styles.app}>
@@ -61,16 +74,22 @@ function App() {
             <p>The average price of a procedure in New York is $300</p>
           </div>
         </div>
-        <FilterResultCard
-          name="Mojgan Fajiram, DMD"
-          speciality="Dentist"
-          address="55 E 9th St, New York, NY 10003"
-          avatar="https://thispersondoesnotexist.com/image"
-          experience={3}
-          reviewsCount={76}
-          price={500}
-          telehealth={true}
-        ></FilterResultCard>
+
+        {
+          data.map((item: Doctor) => (
+            <FilterResultCard
+              key={item.id}
+              name={item.name}
+              speciality={item.speciality}
+              address={item.address}
+              avatar="https://thispersondoesnotexist.com/image"
+              experience={item.experience}
+              reviewsCount={item.reviewsCount}
+              price={item.price}
+              telehealth={item.telehealth}
+            ></FilterResultCard>
+          ))
+        }
       </div>
     </div>
   );
