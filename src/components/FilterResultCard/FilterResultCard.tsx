@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import Avatar from '../Avatar/Avatar';
 import { ReactComponent as HeartIcon } from '../../icons/heart.svg';
+import { ReactComponent as VideoIcon } from '../../icons/video.svg';
 
 import styles from './FilterResultCard.module.css';
 
@@ -27,7 +28,10 @@ const FilterResultCard: FunctionComponent<FilterResultCardProps> = ({
 }) => {
   return (
     <div className={styles.card}>
-      <Avatar source={avatar}></Avatar>
+      <Avatar
+        source={avatar}
+        icon={ telehealth ? <VideoIcon width="32" height="32"></VideoIcon> : undefined }
+      ></Avatar>
       <div className={styles.cardTextInfo}>
         <div className={styles.cardTitle}>
           <p>{name}</p>
