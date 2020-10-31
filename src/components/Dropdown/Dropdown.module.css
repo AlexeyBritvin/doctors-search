@@ -50,9 +50,13 @@
   z-index: 10;
   display: block;
   width: 320px;
-  padding: 16px;
   box-sizing: border-box;
+  border: 1px solid var(--borderColor);
   background-color: var(--reverseTextColor);
   border-radius: 8px;
-  box-shadow: -3px 3px 8px -3px #706E6C;
+  box-shadow: -3px 3px 8px -3px var(--shadowColor);
+}
+
+.dropdownMenuBody {
+  padding: 16px;
 }

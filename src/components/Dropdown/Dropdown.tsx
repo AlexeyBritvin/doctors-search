@@ -1,15 +1,16 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactComponentElement } from 'react';
 import useComponentVisible from '../../hooks/useComponentVisible';
 import { ReactComponent as ArrowIcon } from '../../icons/arrow.svg';
-
 import styles from './Dropdown.module.css';
+
 
 
 export interface DropdownProps {
   label: string
+  footer?: ReactComponentElement<'div'>
 }
 
-const Dropdown: FunctionComponent<DropdownProps> = ({label, children}) => {
+const Dropdown: FunctionComponent<DropdownProps> = ({label, children, footer}) => {
   const handleClick = () => {
     const newValue = !isComponentVisible
     setIsComponentVisible(newValue)
@@ -20,6 +21,13 @@ const Dropdown: FunctionComponent<DropdownProps> = ({label, children}) => {
     isComponentVisible,
     setIsComponentVisible
   } = useComponentVisible(false);
+
+  // const handleReset = (event: SyntheticEvent) => {
+  //   console.log('click handleReset', event)
+  // }
+  // const handleApply = (event: SyntheticEvent) => {
+  //   console.log('click handleApply', event)
+  // }
 
   return (
     <div className={styles.dropdown} ref={ref}>
@@ -38,7 +46,16 @@ const Dropdown: FunctionComponent<DropdownProps> = ({label, children}) => {
       {
         isComponentVisible &&
           <div className={styles.dropdownMenu}>
-            {children}
+            <div className={styles.dropdownMenuBody}>
+              {children}
+            </div>
+
+            {/* <DropdownFooter>
+              <Button viewType="link" onClick={handleReset}>Reset</Button>
+              <Button viewType="primary" onClick={handleApply}>Apply</Button>
+            </DropdownFooter> */}
+
+            {footer && footer}
           </div>
       }
     </div>

@@ -1,0 +1,10 @@
+@import '../../../styles/variables.css';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  box-shadow: 0px -2px 8px -4px var(--shadowColor);
+}
