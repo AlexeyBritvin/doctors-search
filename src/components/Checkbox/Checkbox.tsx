@@ -3,11 +3,11 @@ import styles from './Checkbox.module.css';
 
 export interface CheckboxProps {
   checked: boolean;
-  label?: string;
+  name: string;
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Checkbox: FunctionComponent<CheckboxProps> = ({label, children, ...other}) => {
+const Checkbox: FunctionComponent<CheckboxProps> = ({children, ...other}) => {
   return (
     <div className={styles.container}>
       <label className={styles.checkboxLabel}>
