@@ -29,3 +29,15 @@
 .infoText p {
   margin: 0;
 }
+
+.filters {
+  display: flex;
+}
+
+.filterItem {
+  margin-right: 10px;
+}
+
+.filterItem:last-child {
+  margin-right: 0;
+}

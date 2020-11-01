@@ -10,7 +10,8 @@ export interface CheckboxWithCountProps extends CheckboxProps {
 const CheckboxWithCount: FunctionComponent<CheckboxWithCountProps> = ({count, children, ...other}) => {
   return (
     <Checkbox {...other}>
-      {children} <span className={styles.count}>({count})</span>
+      <span className={styles.text}>{children}</span>
+      <span className={styles.count}>({count})</span>
     </Checkbox>
   );
 }

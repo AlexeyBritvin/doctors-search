@@ -1,16 +1,18 @@
-import React, { FunctionComponent, ReactComponentElement } from 'react';
+import React, { FunctionComponent } from 'react';
 import useComponentVisible from '../../hooks/useComponentVisible';
 import { ReactComponent as ArrowIcon } from '../../icons/arrow.svg';
+import Button from '../Button/Button';
 import styles from './Dropdown.module.css';
-
-
+import DropdownFooter from './DropdownFooter/DropdownFooter';
 
 export interface DropdownProps {
   label: string
-  footer?: ReactComponentElement<'div'>
+  footer?: boolean
+  onReset?: () => void
+  onApply?: () => void
 }
 
-const Dropdown: FunctionComponent<DropdownProps> = ({label, children, footer}) => {
+const Dropdown: FunctionComponent<DropdownProps> = ({label, children, footer, onReset, onApply}) => {
   const handleClick = () => {
     const newValue = !isComponentVisible
     setIsComponentVisible(newValue)
@@ -22,12 +24,13 @@ const Dropdown: FunctionComponent<DropdownProps> = ({label, children, footer}) =
     setIsComponentVisible
   } = useComponentVisible(false);
 
-  // const handleReset = (event: SyntheticEvent) => {
-  //   console.log('click handleReset', event)
-  // }
-  // const handleApply = (event: SyntheticEvent) => {
-  //   console.log('click handleApply', event)
-  // }
+  const handleReset = () => {
+    typeof onReset === 'function' && onReset()
+  }
+  const handleApply = () => {
+    typeof onApply === 'function' && onApply()
+    setIsComponentVisible(false)
+  }
 
   return (
     <div className={styles.dropdown} ref={ref}>
@@ -50,12 +53,13 @@ const Dropdown: FunctionComponent<DropdownProps> = ({label, children, footer}) =
               {children}
             </div>
 
-            {/* <DropdownFooter>
-              <Button viewType="link" onClick={handleReset}>Reset</Button>
-              <Button viewType="primary" onClick={handleApply}>Apply</Button>
-            </DropdownFooter> */}
-
-            {footer && footer}
+            {
+              footer &&
+                <DropdownFooter>
+                  <Button viewType="link" onClick={handleReset}>Reset</Button>
+                  <Button viewType="primary" onClick={handleApply}>Apply</Button>
+                </DropdownFooter>
+            }
           </div>
       }
     </div>

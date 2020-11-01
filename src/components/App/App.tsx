@@ -1,71 +1,68 @@
-import React, { ChangeEvent, SyntheticEvent, useEffect, useState } from 'react';
-import Button from '../Button/Button';
-import Checkbox from '../Checkbox/Checkbox';
-import CheckboxWithCount from '../CheckboxWithCount/CheckboxWithCount';
-import Dropdown from '../Dropdown/Dropdown';
-import FilterResultCard from '../FilterResultCard/FilterResultCard';
-import SearchInput from '../SearchInput/SearchInput';
-import Switcher from '../Switcher/Switcher';
+import React, { useEffect, useState } from 'react';
 import { ReactComponent as InfoIcon } from '../../icons/info.svg';
-
 import { Doctor } from '../../models/doctor.model';
+import FilterResult from '../FilterResult/FilterResult';
+import AvailabilityFilter from '../Filters/AvailabilityFilter/AvailabilityFilter';
+import SpecialityFilter from '../Filters/SpeacialityFilter/SpecialityFilter';
+import InsuranceFilter from '../Filters/InsuranceFIlter/InsuranceFilter';
 
-import response  from '../../data/mock.json';
+import response from '../../data/mock.json';
 import styles from './App.module.css';
 
 function App() {
-  const [inputValue, setInputValue] = useState('')
-
-  const [checked, setChecked] = useState(false)
-
-  const [value, onSwitcherChange] = useState(false)
-
   const [data, setData] = useState<Doctor[]>([])
+  const [specialties, setSpecialties] = useState<string[]>([])
+  const [insurance, setInsurance] = useState<string[]>([])
 
-  const handleChange = ({target}: ChangeEvent<HTMLInputElement>) => {
-    setInputValue(target.value)
+  const getSpecialties = (doctors: Doctor[]): string[] => {
+    const specialties = doctors.map(doc => doc.speciality)
+    return Array.from(new Set(specialties))
   }
 
-  const handleSwitcher = ({target}: ChangeEvent<HTMLInputElement>) => {
-    onSwitcherChange(target.checked)
+  const getInsurance = (doctors: Doctor[]): string[] => {
+    const insurance = doctors.map(doc => doc.insurances)
+    return Array.from(new Set(insurance))
   }
 
-  const onCheckedChange = ({target}: ChangeEvent<HTMLInputElement>) => setChecked(target.checked)
+  const onSpecialityChange = (selected: string[]) => {
+    console.log(selected)
+  }
 
+  const onInsuranceChange = (selected: string[]) => {
+    console.log(selected)
+  }
 
   useEffect(() => {
-    if (response.success) {
-      setData(response.data.items)
+    const {success, data} = response
+    if (success) {
+      setData(data.items)
+      setSpecialties(getSpecialties(data.items))
+      setInsurance(getInsurance(data.items))
     }
   }, [])
 
   return (
     <div className={styles.app}>
       <div className={styles.container}>
-        <Dropdown label="Button">
-          <SearchInput
-            value={inputValue}
-            placeholder="Filter by speciality"
-            onChange={handleChange}
-          ></SearchInput>
-
-          <div>
-            <div>
-              <Switcher value={value} onChange={handleSwitcher}></Switcher>
-            </div>
-
-            <Checkbox
-              checked={checked}
-              onChange={onCheckedChange}
-            >Plastic Surgeon</Checkbox>
-
-            <CheckboxWithCount
-              checked={checked}
-              onChange={onCheckedChange}
-              count={4}
-            >Plastic Surgeon</CheckboxWithCount>
+        <div className={styles.filters}>
+          <div className={styles.filterItem}>
+            <AvailabilityFilter></AvailabilityFilter>
           </div>
-        </Dropdown>
+
+          <div className={styles.filterItem}>
+            <SpecialityFilter
+              specialties={specialties}
+              onChange={onSpecialityChange}
+            ></SpecialityFilter>
+          </div>
+
+          <div className={styles.filterItem}>
+            <InsuranceFilter
+              insurance={insurance}
+              onChange={onInsuranceChange}
+            ></InsuranceFilter>
+          </div>
+        </div>
 
         <h1 className={styles.header}>Root Canal doctors in New York, NY</h1>
         <div className={styles.info}>
@@ -75,21 +72,7 @@ function App() {
           </div>
         </div>
 
-        {
-          data.map((item: Doctor) => (
-            <FilterResultCard
-              key={item.id}
-              name={item.name}
-              speciality={item.speciality}
-              address={item.address}
-              avatar="https://thispersondoesnotexist.com/image"
-              experience={item.experience}
-              reviewsCount={item.reviewsCount}
-              price={item.price}
-              telehealth={item.telehealth}
-            ></FilterResultCard>
-          ))
-        }
+        <FilterResult data={data}></FilterResult>
       </div>
     </div>
   );

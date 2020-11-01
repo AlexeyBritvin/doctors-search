@@ -2,3 +2,8 @@
   padding-left: 8px;
   color: var(--secondaryTextColor);
 }
+
+.text {
+  display: flex;
+  align-items: center;
+}

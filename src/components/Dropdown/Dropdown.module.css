@@ -58,5 +58,8 @@
 }
 
 .dropdownMenuBody {
+  max-height: 444px;
+  overflow-y: auto;
   padding: 16px;
+  box-sizing: border-box;
 }
