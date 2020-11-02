@@ -7,18 +7,23 @@ import SearchInput from '../../SearchInput/SearchInput';
 
 export interface InsuranceFilterProps {
   insurance: string[]
+  selected: string[]
   onChange: (selected: string[]) => void
 }
 
-const InsuranceFilter: React.FC<InsuranceFilterProps> = ({insurance, onChange}) => {
+const InsuranceFilter: React.FC<InsuranceFilterProps> = ({insurance, selected, onChange}) => {
   const [search, setSearch] = useState('')
   const [checkboxes, setCheckboxes] = useState<CheckboxView[]>([])
-  const [selected, setSelected] = useState<string[]>([])
+  const [innerSelected, setSelected] = useState<string[]>([])
 
   useEffect(() => {
     const checkboxes = generateCheckboxes(insurance)
     setCheckboxes(checkboxes)
   }, [insurance])
+
+  useEffect(() => {
+    setSelected(selected)
+  }, [selected])
 
   const handleChange = ({target}: ChangeEvent<HTMLInputElement>) => {
     if (target.checked) {
@@ -55,7 +60,7 @@ const InsuranceFilter: React.FC<InsuranceFilterProps> = ({insurance, onChange}) 
     setSelected([])
   }
   const handleApply = () => {
-    onChange(selected)
+    onChange(innerSelected)
   }
 
   return (
@@ -79,7 +84,7 @@ const InsuranceFilter: React.FC<InsuranceFilterProps> = ({insurance, onChange}) 
             <CheckboxWithCount
               name={name}
               count={2}
-              checked={ selected.includes(name) }
+              checked={ innerSelected.includes(name) }
               onChange={handleChange}
             >
               {label}

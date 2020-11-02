@@ -14,7 +14,7 @@
         "insurances": "Hartford",
         "telehealth": true,
         "telehealth_available": "5/24/2021",
-        "offline_available": "7/9/2021",
+        "offline_available": "11/2/2020",
         "price": 3600
       },
       {
@@ -29,7 +29,7 @@
         "insurances": "Ironshore",
         "telehealth": true,
         "telehealth_available": "8/24/2021",
-        "offline_available": "5/1/2021",
+        "offline_available": "11/3/2020",
         "price": 500
       },
       {
@@ -44,7 +44,7 @@
         "insurances": "Great American Insurance Group",
         "telehealth": true,
         "telehealth_available": "6/1/2021",
-        "offline_available": "9/19/2021",
+        "offline_available": "11/8/2020",
         "price": 3000
       },
       {
@@ -59,7 +59,7 @@
         "insurances": "ANE",
         "telehealth": false,
         "telehealth_available": "8/28/2021",
-        "offline_available": "2/2/2021",
+        "offline_available": "11/4/2020",
         "price": 8300
       },
       {
@@ -74,7 +74,7 @@
         "insurances": "ANE",
         "telehealth": true,
         "telehealth_available": "4/7/2021",
-        "offline_available": "2/22/2021",
+        "offline_available": "11/4/2020",
         "price": 7900
       },
       {
@@ -89,7 +89,7 @@
         "insurances": "Golden Rule Insurance Company",
         "telehealth": false,
         "telehealth_available": "7/14/2021",
-        "offline_available": "3/11/2021",
+        "offline_available": "11/5/2020",
         "price": 2200
       },
       {
@@ -104,7 +104,7 @@
         "insurances": "American Family Insurance",
         "telehealth": true,
         "telehealth_available": "10/4/2021",
-        "offline_available": "7/26/2021",
+        "offline_available": "11/6/2020",
         "price": 6500
       },
       {
@@ -119,7 +119,7 @@
         "insurances": "ACORD",
         "telehealth": false,
         "telehealth_available": "3/12/2021",
-        "offline_available": "4/14/2021",
+        "offline_available": "11/7/2020",
         "price": 800
       },
       {

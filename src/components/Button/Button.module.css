@@ -22,3 +22,7 @@
   color: var(--reverseTextColor);
   cursor: pointer;
 }
+
+.link:focus, .primary:focus {
+  outline: none;
+}

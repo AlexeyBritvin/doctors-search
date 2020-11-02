@@ -7,18 +7,23 @@ import SearchInput from '../../SearchInput/SearchInput';
 
 export interface SpecialityFilterProps {
   specialties: string[]
+  selected: string[]
   onChange: (selected: string[]) => void
 }
 
-const SpecialityFilter: React.FunctionComponent<SpecialityFilterProps> = ({specialties, onChange}) => {
+const SpecialityFilter: React.FunctionComponent<SpecialityFilterProps> = ({specialties, selected, onChange}) => {
   const [search, setSearch] = useState('')
   const [checkboxes, setCheckboxes] = useState<CheckboxView[]>([])
-  const [selected, setSelected] = useState<string[]>([])
+  const [innerSelected, setSelected] = useState<string[]>([])
 
   useEffect(() => {
     const checkboxes = generateCheckboxes(specialties)
     setCheckboxes(checkboxes)
   }, [specialties])
+
+  useEffect(() => {
+    setSelected(selected)
+  }, [selected])
 
   const handleChange = ({target}: ChangeEvent<HTMLInputElement>) => {
     if (target.checked) {
@@ -55,7 +60,7 @@ const SpecialityFilter: React.FunctionComponent<SpecialityFilterProps> = ({speci
     setSelected([])
   }
   const handleApply = () => {
-    onChange(selected)
+    onChange(innerSelected)
   }
 
   return (
@@ -79,7 +84,7 @@ const SpecialityFilter: React.FunctionComponent<SpecialityFilterProps> = ({speci
             <CheckboxWithCount
               name={name}
               count={2}
-              checked={ selected.includes(name) }
+              checked={ innerSelected.includes(name) }
               onChange={handleChange}
             >
               {label}
