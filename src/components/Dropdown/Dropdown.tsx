@@ -7,13 +7,22 @@ import DropdownFooter from './DropdownFooter/DropdownFooter';
 
 export interface DropdownProps {
   label: string
+  size?: 'small' | 'normal' | 'big',
   footer?: boolean
   onReset?: () => void
   onApply?: () => void
   onClose? : () => void
 }
 
-const Dropdown: FunctionComponent<DropdownProps> = ({label, children, footer, onReset, onApply, onClose}) => {
+const Dropdown: FunctionComponent<DropdownProps> = ({
+  label,
+  size = 'normal',
+  children,
+  footer,
+  onReset,
+  onApply,
+  onClose
+}) => {
   const handleClick = () => {
     const newValue = !isComponentVisible
     setIsComponentVisible(newValue)
@@ -49,7 +58,7 @@ const Dropdown: FunctionComponent<DropdownProps> = ({label, children, footer, on
 
       {
         isComponentVisible &&
-          <div className={styles.dropdownMenu}>
+          <div className={`${styles.dropdownMenu} ${styles[size]}`}>
             <div className={styles.dropdownMenuBody}>
               {children}
             </div>

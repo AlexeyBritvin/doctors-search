@@ -70,6 +70,7 @@ const InsuranceFilter: React.FC<InsuranceFilterProps> = ({insurance, selected, o
   return (
     <Dropdown
       label="Insurance"
+      size="big"
       footer={true}
       onApply={handleApply}
       onReset={handleReset}

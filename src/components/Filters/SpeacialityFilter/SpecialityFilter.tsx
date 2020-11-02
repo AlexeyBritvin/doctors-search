@@ -70,6 +70,7 @@ const SpecialityFilter: React.FunctionComponent<SpecialityFilterProps> = ({speci
   return (
     <Dropdown
       label="Speciality"
+      size="big"
       footer={true}
       onApply={handleApply}
       onReset={handleReset}
