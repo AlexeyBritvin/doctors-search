@@ -63,12 +63,17 @@ const InsuranceFilter: React.FC<InsuranceFilterProps> = ({insurance, selected, o
     onChange(innerSelected)
   }
 
+  const onClose = () => {
+    setSelected(selected)
+  }
+
   return (
     <Dropdown
       label="Insurance"
       footer={true}
       onApply={handleApply}
       onReset={handleReset}
+      onClose={onClose}
     >
       <DropdownMenuItem>
         <SearchInput

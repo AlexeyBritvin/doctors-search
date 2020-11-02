@@ -63,12 +63,17 @@ const SpecialityFilter: React.FunctionComponent<SpecialityFilterProps> = ({speci
     onChange(innerSelected)
   }
 
+  const onClose = () => {
+    setSelected(selected)
+  }
+
   return (
     <Dropdown
       label="Speciality"
       footer={true}
       onApply={handleApply}
       onReset={handleReset}
+      onClose={onClose}
     >
       <DropdownMenuItem>
         <SearchInput

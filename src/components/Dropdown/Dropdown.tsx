@@ -10,9 +10,10 @@ export interface DropdownProps {
   footer?: boolean
   onReset?: () => void
   onApply?: () => void
+  onClose? : () => void
 }
 
-const Dropdown: FunctionComponent<DropdownProps> = ({label, children, footer, onReset, onApply}) => {
+const Dropdown: FunctionComponent<DropdownProps> = ({label, children, footer, onReset, onApply, onClose}) => {
   const handleClick = () => {
     const newValue = !isComponentVisible
     setIsComponentVisible(newValue)
@@ -22,7 +23,7 @@ const Dropdown: FunctionComponent<DropdownProps> = ({label, children, footer, on
     ref,
     isComponentVisible,
     setIsComponentVisible
-  } = useComponentVisible(false);
+  } = useComponentVisible(false, onClose);
 
   const handleReset = () => {
     typeof onReset === 'function' && onReset()
