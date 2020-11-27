@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import { ReactComponent as InfoIcon } from '../../icons/info.svg';
-import { Doctor } from '../../models/doctor.model';
-import FilterResult from '../FilterResult/FilterResult';
-import AvailabilityFilter from '../Filters/AvailabilityFilter/AvailabilityFilter';
-import SpecialityFilter from '../Filters/SpeacialityFilter/SpecialityFilter';
-import InsuranceFilter from '../Filters/InsuranceFIlter/InsuranceFilter';
-import { MainFilter } from '../../models/main-filter.model';
-import { isBetweenDays, isToday } from '../../helpers/date-filters';
-import { applyMultipleFilters } from '../../helpers/multiple-filters';
+import React, { useEffect, useState } from 'react'
+import { ReactComponent as InfoIcon } from '../../icons/info.svg'
+import { Doctor } from '../../models/doctor.model'
+import FilterResult from '../FilterResult/FilterResult'
+import AvailabilityFilter from '../Filters/AvailabilityFilter/AvailabilityFilter'
+import SpecialityFilter from '../Filters/SpeacialityFilter/SpecialityFilter'
+import InsuranceFilter from '../Filters/InsuranceFIlter/InsuranceFilter'
+import { MainFilter } from '../../models/main-filter.model'
+import { isBetweenDays, isToday } from '../../helpers/date-filters'
+import { applyMultipleFilters } from '../../helpers/multiple-filters'
 
-import response from '../../data/mock.json';
-import styles from './App.module.css';
-import Button from '../Button/Button';
+import response from '../../data/mock.json'
+import styles from './App.module.css'
+import Button from '../Button/Button'
+import getUniqueArrayValues from '../../helpers/get-unique-values'
 
 function App() {
   const defaultFilter: MainFilter = {
@@ -21,11 +22,11 @@ function App() {
       nextTwoWeeks: false,
 
       telehealth: false,
-      acceptNew: false
+      acceptNew: false,
     },
 
     specialities: [],
-    insurance: []
+    insurance: [],
   }
 
   const [data, setData] = useState<Doctor[]>([])
@@ -47,30 +48,20 @@ function App() {
     insurance: (doc: Doctor, filter: MainFilter) => filter.insurance.includes(doc.insurances),
   }
 
-  const getSpecialties = (doctors: Doctor[]): string[] => {
-    const specialties = doctors.map(doc => doc.speciality)
-    return Array.from(new Set(specialties))
-  }
-
-  const getInsurance = (doctors: Doctor[]): string[] => {
-    const insurance = doctors.map(doc => doc.insurances)
-    return Array.from(new Set(insurance))
-  }
-
   const onSpecialityChange = (selected: string[]) => {
-    const newFilter: MainFilter = {...filter, specialities: selected}
+    const newFilter: MainFilter = { ...filter, specialities: selected }
     setFilter(newFilter)
     applyAllFilters(data, newFilter)
   }
 
   const onInsuranceChange = (selected: string[]) => {
-    const newFilter: MainFilter = {...filter, insurance: selected}
+    const newFilter: MainFilter = { ...filter, insurance: selected }
     setFilter(newFilter)
     applyAllFilters(data, newFilter)
   }
 
   const onAvailabilityChange = (name: string, checked: boolean) => {
-    const newFilter: MainFilter = {...filter, availability: {...filter.availability, [name]: checked}}
+    const newFilter: MainFilter = { ...filter, availability: { ...filter.availability, [name]: checked } }
     setFilter(newFilter)
     applyAllFilters(data, newFilter)
   }
@@ -87,13 +78,13 @@ function App() {
   }
 
   useEffect(() => {
-    const {success, data} = response
+    const { success, data } = response
     if (success) {
-      const {items} = data
+      const { items } = data
       setData(items)
       setFilteredData(items)
-      setSpecialties(getSpecialties(items))
-      setInsurance(getInsurance(items))
+      setSpecialties(getUniqueArrayValues(items, (doc) => doc.speciality))
+      setInsurance(getUniqueArrayValues(items, (doc) => doc.insurances))
     }
   }, [])
 
@@ -102,26 +93,21 @@ function App() {
       <div className={styles.container}>
         <div className={styles.filters}>
           <div className={styles.filterItem}>
-            <AvailabilityFilter
-              selected={filter.availability}
-              onChange={onAvailabilityChange}
-            ></AvailabilityFilter>
+            <AvailabilityFilter selected={filter.availability} onChange={onAvailabilityChange}></AvailabilityFilter>
           </div>
 
           <div className={styles.filterItem}>
             <SpecialityFilter
               selected={filter.specialities}
               specialties={specialties}
-              onChange={onSpecialityChange}
-            ></SpecialityFilter>
+              onChange={onSpecialityChange}></SpecialityFilter>
           </div>
 
           <div className={styles.filterItem}>
             <InsuranceFilter
               selected={filter.insurance}
               insurance={insurance}
-              onChange={onInsuranceChange}
-            ></InsuranceFilter>
+              onChange={onInsuranceChange}></InsuranceFilter>
           </div>
 
           <div className={styles.filterItem}>
@@ -142,7 +128,7 @@ function App() {
         <FilterResult data={filteredData}></FilterResult>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
