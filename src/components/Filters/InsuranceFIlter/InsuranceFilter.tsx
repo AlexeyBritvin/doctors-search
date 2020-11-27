@@ -36,13 +36,16 @@ const InsuranceFilter: React.FC<InsuranceFilterProps> = ({ insurance, selected, 
 
   const handleReset = () => {
     setSelected([])
+    setSearch('')
   }
   const handleApply = () => {
     onChange(innerSelected)
+    setSearch('')
   }
 
   const onClose = () => {
     setSelected(selected)
+    setSearch('')
   }
 
   return (

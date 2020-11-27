@@ -36,13 +36,16 @@ const SpecialityFilter: React.FunctionComponent<SpecialityFilterProps> = ({ spec
 
   const handleReset = () => {
     setSelected([])
+    setSearch('')
   }
   const handleApply = () => {
     onChange(innerSelected)
+    setSearch('')
   }
 
   const onClose = () => {
     setSelected(selected)
+    setSearch('')
   }
 
   return (
