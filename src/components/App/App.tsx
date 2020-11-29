@@ -30,6 +30,7 @@ function App() {
   }
 
   const [data, setData] = useState<Doctor[]>([])
+  const [averagePrice, setAveragePrice] = useState(0)
   const [filteredData, setFilteredData] = useState<Doctor[]>([])
   const [specialties, setSpecialties] = useState<string[]>([])
   const [insurance, setInsurance] = useState<string[]>([])
@@ -70,11 +71,19 @@ function App() {
     const filtered = applyMultipleFilters(data, filter, filterFns)
     console.log(filtered)
     setFilteredData(filtered)
+    setAveragePrice(calcAveragePrice(filtered))
   }
 
   const clearFilters = () => {
     setFilter(defaultFilter)
     applyAllFilters(data, defaultFilter)
+    setAveragePrice(calcAveragePrice(data))
+  }
+
+  const calcAveragePrice = (items: Doctor[]) => {
+    if (!items.length) return 0
+    const total = items.reduce((acc, nextItem) => acc + nextItem.price, 0)
+    return Math.round(total / items.length)
   }
 
   useEffect(() => {
@@ -85,6 +94,7 @@ function App() {
       setFilteredData(items)
       setSpecialties(getUniqueArrayValues(items, (doc) => doc.speciality))
       setInsurance(getUniqueArrayValues(items, (doc) => doc.insurances))
+      setAveragePrice(calcAveragePrice(items))
     }
   }, [])
 
@@ -121,7 +131,7 @@ function App() {
         <div className={styles.info}>
           <InfoIcon className={styles.infoIcon}></InfoIcon>
           <div className={styles.infoText}>
-            <p>The average price of a procedure in New York is $300</p>
+            <p>The average price of a procedure in New York is ${averagePrice}</p>
           </div>
         </div>
 
