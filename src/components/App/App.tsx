@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, VFC } from 'react'
 import { ReactComponent as InfoIcon } from '../../icons/info.svg'
 import FilterResult from '../FilterResult/FilterResult'
 import AvailabilityFilter from '../Filters/AvailabilityFilter/AvailabilityFilter'
@@ -19,7 +19,7 @@ import response from '../../data/mock.json'
 import styles from './App.module.css'
 import Button from '../Button/Button'
 
-function App() {
+const App: VFC = () => {
   const dispatch = useDispatch()
   const { filter, filteredData, averagePrice } = useSelector((state: RootState) => state.doctors)
 
