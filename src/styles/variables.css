@@ -1,12 +1,12 @@
 :root {
   --primary: #327680;
-  --accentColor: #ED6852;
-  --borderColor: #BECACB;
-  --dividerColor: #EAEEEE;
+  --accentColor: #ed6852;
+  --borderColor: #becacb;
+  --dividerColor: #eaeeee;
 
-  --textColor: #244D51;
-  --secondaryTextColor: #91A5A7;
+  --textColor: #244d51;
+  --secondaryTextColor: #91a5a7;
   --additionalTextColor: #668386;
   --reverseTextColor: #ffffff;
-  --shadowColor: #706E6C;
+  --shadowColor: #706e6c;
 }
